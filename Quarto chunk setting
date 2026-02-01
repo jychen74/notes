@@ -1,0 +1,107 @@
+# Quarto (`.qmd`) Chunk Options Cheat Sheet
+
+這份速查表整理了 Quarto Code Chunk (`#|`) 的核心參數，用於控制程式碼的執行、顯示及輸出行為。適用於 R、Python (Jupyter) 等運算引擎。
+
+## 1. 核心參數互動矩陣 (Interaction Matrix)
+
+這是最容易混淆的部分。此表展示不同參數組合下，「程式碼原始碼」與「運算結果」在最終報告中的能見度。
+
+| 參數設定 (Option) | 執行程式碼? (Run) | 顯示程式碼? (Show Code) | 顯示輸出結果? (Show Output) | 適用場景 |
+| :--- | :---: | :---: | :---: | :--- |
+| **預設值 (Default)** | ✅ | ✅ | ✅ | 一般教學、展示完整分析過程 |
+| **`eval: false`** | ❌ | ✅ | ❌ | 展示語法但不執行 (例如：展示安裝套件指令) |
+| **`echo: false`** | ✅ | ❌ | ✅ | 給非技術讀者的報告 (隱藏程式碼，只看圖表/結論) |
+| **`output: false`** | ✅ | ✅ | ❌ | 執行並顯示語法，但不顯示結果 (例如：載入大量資料) |
+| **`include: false`**| ✅ | ❌ | ❌ | 默默執行設定 (例如：`library()`、設定環境變數) |
+| **`error: true`** | ✅ | ✅ | ✅ (顯示報錯) | 演示錯誤訊息，或確保流程出錯時文件仍能產出 |
+
+> **註**：`include: false` 相當於同時設定 `echo: false` + `output: false` (並隱藏 warning/message)。
+
+---
+
+## 2. 參數詳解
+
+### A. 執行控制 (Execution)
+
+| 參數 | 數值類型 | 說明 |
+| :--- | :--- | :--- |
+| **`eval`** | `true` / `false` | 是否執行此區塊。若為 `false`，程式碼僅作純文字展示，不會產生變數。 |
+| **`cache`** | `true` / `false` | 是否快取運算結果。適合耗時運算 (如大型 ML 模型或基因序列比對)，避免每次 Render 重跑。 |
+| **`freeze`** | `true` / `false` / `auto` | (通常設在 YAML) 控制是否在重新 Render 整個專案時，凍結舊有的運算結果。 |
+
+### B. 顯示控制 (Display)
+
+| 參數 | 數值類型 | 說明 |
+| :--- | :--- | :--- |
+| **`echo`** | `true` / `false` / `fenced` | 是否顯示程式碼。`fenced` 會連同 backticks (```) 一起顯示 (教學用)。 |
+| **`output`** | `true` / `false` / `asis` | 是否顯示運算結果。`asis` 表示將輸出視為 Raw Markdown (例如用程式碼動態生成 Markdown 表格)。 |
+| **`warning`**| `true` / `false` | 是否顯示警告訊息 (Warnings)。建議設為 `false` 保持版面乾淨。 |
+| **`message`**| `true` / `false` | 是否顯示提示訊息 (Messages，如套件載入通知)。建議設為 `false`。 |
+
+### C. 圖表與排版 (Figures & Layout)
+
+| 參數 | 範例值 | 說明 |
+| :--- | :--- | :--- |
+| **`label`** | `"fig-trends"` | 區塊唯一 ID，用於交叉參照 (Cross-reference)。圖表建議以 `fig-` 開頭。 |
+| **`fig-cap`** | `"圖表標題"` | 圖片下方的說明文字 (Caption)。 |
+| **`fig-subcap`**| `["圖A", "圖B"]` | 子圖表標題，用於多圖並列時。 |
+| **`fig-width`** | `8` | 圖片輸出寬度 (英吋)。 |
+| **`fig-height`**| `6` | 圖片輸出高度 (英吋)。 |
+| **`fig-align`** | `"center"` | 對齊方式：`default`, `left`, `center`, `right`。 |
+| **`fig-alt`** | `"替代文字"` | 用於螢幕閱讀器的替代文字 (Accessibility)。 |
+| **`layout-ncol`**| `2` | 將多個產出的圖表並排顯示的欄數。 |
+| **`column`** | `"page"` | 控制內容寬度。`body`(預設), `page`(較寬), `screen`(全螢幕), `margin`(側邊欄)。 |
+
+### D. 表格 (Tables)
+
+| 參數 | 範例值 | 說明 |
+| :--- | :--- | :--- |
+| **`tbl-cap`** | `"表格標題"` | 表格上方的說明文字。 |
+| **`tbl-colwidths`**| `[40, 60]` / `"auto"` | 指定表格欄寬比例。 |
+
+---
+
+## 3. 實用範例 (Snippets)
+
+### Setup Chunk (全域設定)
+通常放在文件最上方，用來載入套件但不顯示任何雜訊。
+
+```yaml
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(knitr)
+# 設定全域預設值 (Optional)
+opts_chunk$set(echo = TRUE, warning = FALSE)
+
+# 教學展示 (只看 Code，不執行)
+適合展示安裝指令或耗時極長的程式碼片段。
+
+#| eval: false
+
+install.packages("BiocManager")
+BiocManager::install("GenomicRanges")
+
+# 側邊欄註解 (Margin Content)
+將圖表或文字移至文章右側空白處 (Tufte Style)。
+
+#| column: margin
+#| echo: false
+
+print("這段文字或圖表會出現在側邊欄，適合放補充說明。")#| column: margin
+#| echo: false
+
+print("這段文字或圖表會出現在側邊欄，適合放補充說明。")
+
+# 多圖並列 (Sub-figures)
+一次生成兩張圖並排。
+#| label: fig-comparison
+#| layout-ncol: 2
+#| fig-cap: "比較圖"
+#| fig-subcap: 
+#|   - "控制組"
+#|   - "實驗組"
+
+plot(1:10)
+plot(10:1)
