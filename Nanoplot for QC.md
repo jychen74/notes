@@ -77,3 +77,13 @@ pwd
   - qc = QC 結果
   - analysis = 下游分析
   - notes = 記錄 run 設定
+
+## 如何 run NanoPlot + QC 報告整理方式
+
+指令
+
+```bash
+
+
+
+```
