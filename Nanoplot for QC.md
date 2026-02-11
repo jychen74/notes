@@ -204,6 +204,7 @@ qc/custom_r/
 ## 如何使用
 
 ```
+
 micromamba activate ~/bioenvs/nanoplot
 Rscript ~/nanopore/scripts/ont_qc_custom.R \
   /home/epi2mewsl/nanopore/runs/20251212_1501_MD-102915_FBD88464_4ea6a474/raw/sequencing_summary_FBD88464_4ea6a474_8ac492d9.txt
