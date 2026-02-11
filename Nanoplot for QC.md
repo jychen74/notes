@@ -90,7 +90,7 @@ cd ~/nanopore/runs/ < 自定資料夾名稱 >
 mkdir -p qc/nanoplot
 
 NanoPlot \
-  --summary raw/sequencing_summary_FBD88464_4ea6a474_8ac492d9.txt \
+  --summary raw/sequencing_summary.txt \
   --outdir qc/nanoplot \
   --threads 16 \
   --loglength \
