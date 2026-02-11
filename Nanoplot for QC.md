@@ -109,3 +109,10 @@ qc/nanoplot/
 ├── bivariate_plots.png
 └── summary_stats.tsv
 ```
+
+### length_distribution
+
+- 是否有大量短 reads (adaptive sampling 截斷)
+- 長尾是否存在
+
+是否偏短（DNA 斷裂）
