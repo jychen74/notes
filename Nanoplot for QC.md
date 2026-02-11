@@ -210,3 +210,15 @@ Rscript ~/nanopore/scripts/ont_qc_custom.R \
   /home/epi2mewsl/nanopore/runs/20251212_1501_MD-102915_FBD88464_4ea6a474/raw/sequencing_summary_FBD88464_4ea6a474_8ac492d9.txt
 
 ```
+
+## R 的產出內容
+
+```
+qc/custom_r/
+├── length_distribution_log10.png
+├── qscore_distribution.png
+├── length_vs_q_hexbin.png
+├── yield_per_10min.png
+├── cumulative_yield.png
+└── qc_summary.tsv
+```
