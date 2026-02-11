@@ -183,11 +183,12 @@ B) 產生：
 
 C) R script location
 
-- the [R scripts](notes/R_nanoplot)
+- the [R scripts](notes/ont_qc_custom.R)
 
 ```
-~/nanopore/scripts/
-    nanoplot_custom_qc.R
+
+~/nanopore/scripts/nanoplot_custom_qc.R
+
 ```
 
 - eahc run
