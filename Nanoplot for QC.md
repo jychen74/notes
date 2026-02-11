@@ -80,10 +80,22 @@ pwd
 
 ## 如何 run NanoPlot + QC 報告整理方式
 
-指令
+- 把 sequence 的 CSV 檔搬到 raw 資料夾
+
+- 指令
 
 ```bash
 
+cd ~/nanopore/runs/20251212_1501_MD-102915_FBD88464_4ea6a474
+
+mkdir -p qc/nanoplot
+
+NanoPlot \
+  --summary raw/sequencing_summary_FBD88464_4ea6a474_8ac492d9.txt \
+  --outdir qc/nanoplot \
+  --threads 16 \
+  --loglength \
+  --tsv_stats
 
 
 ```
