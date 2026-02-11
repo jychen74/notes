@@ -24,3 +24,15 @@ micromamba activate ~/bioenvs/nanoplot
 NanoPlot --version #注意大小寫有差
 
 ```
+
+## 正確啟動與使用環境
+
+- 開 WSL 的標準流程
+
+```bash
+
+wsl
+cd ~
+micromamba activate ~/bioenvs/nanoplot
+
+```
