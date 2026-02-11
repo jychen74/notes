@@ -54,7 +54,7 @@ pwd
 
 ~/nanopore/
 ├── runs/
-│   └── 20251212_1501_MD-102915_FBD88464_4ea6a474/
+│   └── <自定名稱>/
 │       ├── raw/
 │       │   ├── sequencing_summary_*.txt
 │       │   ├── fastq_pass/
@@ -69,6 +69,5 @@ pwd
 │   ├── metagenomics/
 │   └── assembly/
 └── bioenvs/
-
 
 ```
