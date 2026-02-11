@@ -143,3 +143,25 @@ qc/
 │   └── figures...
 └── QC_summary.md
 ```
+
+### QC_summary.md 建議內容
+
+```
+# Run QC Summary
+
+Run ID:
+Flowcell:
+Basecalling model:
+Adaptive sampling:
+
+## Yield
+Total yield: X Gb
+Read count: X
+N50: X bp
+
+## Observations
+- Length distribution shows...
+- Q score distribution indicates...
+- Adaptive depletion appears...
+
+```
