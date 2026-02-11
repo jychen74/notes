@@ -1,3 +1,4 @@
+## ONT QC Custom Script
 #!/usr/bin/env Rscript
 
 suppressPackageStartupMessages({
