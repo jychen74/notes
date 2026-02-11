@@ -54,7 +54,7 @@ pwd
 
 ~/nanopore/
 ├── runs/
-│   └── <自定名稱>/
+│   └── < 自定名稱 >/
 │       ├── raw/
 │       │   ├── sequencing_summary_*.txt
 │       │   ├── fastq_pass/
