@@ -114,5 +114,6 @@ qc/nanoplot/
 
 - 是否有大量短 reads (adaptive sampling 截斷)
 - 長尾是否存在
+- 是否偏短（DNA 斷裂）
 
-是否偏短（DNA 斷裂）
+##
