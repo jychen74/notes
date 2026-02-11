@@ -71,3 +71,9 @@ pwd
 └── bioenvs/
 
 ```
+
+原則：  
+ raw = 原始資料  
+ qc = QC 結果  
+ analysis = 下游分析  
+ notes = 記錄 run 設定
