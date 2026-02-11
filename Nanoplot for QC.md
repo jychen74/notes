@@ -12,3 +12,5 @@ micromamba create -y -p ~/bioenvs/nanoplot \
 ```
 
 > 加上 matplotlib 是為了避免之後 Python 繪圖依賴缺失。
+
+##
