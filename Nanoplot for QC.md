@@ -180,3 +180,11 @@ B) 產生：
 - Length vs Q（用 hexbin，不會黑成一坨）
 - Yield over time
 - 自訂主題（theme_classic + 字體）
+
+C) R script location
+
+```
+~/nanopore/scripts/
+    nanoplot_custom_qc.R
+
+```
