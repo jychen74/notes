@@ -45,3 +45,30 @@ pwd
 # 應顯示 /home/epi2mewsl
 
 ```
+
+- 不要在 /mnt/c/... 下跑分析，會跑到懷疑人生
+
+## 預計資料夾結構
+
+```bash
+
+~/nanopore/
+├── runs/
+│   └── 20251212_1501_MD-102915_FBD88464_4ea6a474/
+│       ├── raw/
+│       │   ├── sequencing_summary_*.txt
+│       │   ├── fastq_pass/
+│       │   └── pod5/
+│       ├── qc/
+│       │   ├── nanoplot/
+│       │   └── custom_r/
+│       └── notes/
+├── ref/
+├── analysis/
+│   ├── host_depletion/
+│   ├── metagenomics/
+│   └── assembly/
+└── bioenvs/
+
+
+```
