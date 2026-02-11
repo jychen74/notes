@@ -54,7 +54,7 @@ pwd
 
 ~/nanopore/
 ├── runs/
-│   └── < 自定名稱 >/
+│   └── < 自定資料夾名稱 >/
 │       ├── raw/
 │       │   ├── sequencing_summary_*.txt
 │       │   ├── fastq_pass/
@@ -81,12 +81,11 @@ pwd
 ## 如何 run NanoPlot + QC 報告整理方式
 
 - 把 sequence 的 CSV 檔搬到 raw 資料夾
-
 - 指令
 
 ```bash
 
-cd ~/nanopore/runs/20251212_1501_MD-102915_FBD88464_4ea6a474
+cd ~/nanopore/runs/ < 自定資料夾名稱 >
 
 mkdir -p qc/nanoplot
 
