@@ -183,7 +183,7 @@ B) 產生：
 
 C) R script location
 
-- template
+- the [R scripts]()
 
 ```
 ~/nanopore/scripts/
