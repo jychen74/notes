@@ -186,9 +186,7 @@ C) R script location
 - the [R scripts](notes/ont_qc_custom.R)
 
 ```
-
 ~/nanopore/scripts/nanoplot_custom_qc.R
-
 ```
 
 - eahc run
