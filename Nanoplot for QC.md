@@ -125,3 +125,8 @@ qc/nanoplot/
 
 - 產量是否線性增加
 - 是否中途掉速 (flowcell exhaustion)
+
+### bivariate (Length vs Q)
+
+- 長讀長是否伴隨高 Q
+- adaptive sampling 是否影響 read quality
