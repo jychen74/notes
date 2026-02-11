@@ -183,7 +183,7 @@ B) 產生：
 
 C) R script location
 
-- the [R scripts](.\R_nanoplot)
+- the [R scripts](notes/R_nanoplot)
 
 ```
 ~/nanopore/scripts/
