@@ -183,8 +183,15 @@ B) 產生：
 
 C) R script location
 
+- template
+
 ```
 ~/nanopore/scripts/
     nanoplot_custom_qc.R
+```
+
+- eahc run
+
+```
 
 ```
