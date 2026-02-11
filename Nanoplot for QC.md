@@ -96,5 +96,16 @@ NanoPlot \
   --loglength \
   --tsv_stats
 
+```
 
+## 產出資料
+
+```bash
+qc/nanoplot/
+├── NanoPlot-report.html
+├── length_distribution.png
+├── quality_distribution.png
+├── cumulative_yield.png
+├── bivariate_plots.png
+└── summary_stats.tsv
 ```
