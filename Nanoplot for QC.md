@@ -21,4 +21,6 @@ micromamba activate
 
 micromamba activate ~/bioenvs/nanoplot
 
+NanoPlot --version #注意大小寫有差
+
 ```
