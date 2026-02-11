@@ -41,5 +41,7 @@ micromamba activate ~/bioenvs/nanoplot
 
 ```bash
 
+pwd
+# 應顯示 /home/epi2mewsl
 
 ```
