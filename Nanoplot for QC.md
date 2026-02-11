@@ -116,4 +116,7 @@ qc/nanoplot/
 - 長尾是否存在
 - 是否偏短（DNA 斷裂）
 
-##
+## quality_distribution
+
+- Q 值是否集中在 Q10–Q20
+- 是否有低品質尾端
