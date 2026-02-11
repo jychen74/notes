@@ -130,3 +130,16 @@ qc/nanoplot/
 
 - 長讀長是否伴隨高 Q
 - adaptive sampling 是否影響 read quality
+
+## 報告整理
+
+###　每個 run 建一個 QC README.md
+
+```
+qc/
+├── nanoplot/
+│   ├── NanoPlot-report.html
+│   ├── summary_stats.tsv
+│   └── figures...
+└── QC_summary.md
+```
