@@ -167,3 +167,16 @@ N50: X bp
 ```
 
 ## R 自定圖表
+
+### Read data
+
+A) 讀 sequencing_summary
+
+- 用 data.table::fread()（大檔快很多）
+
+B) 產生：
+
+- 自定 length histogram（log10 + 自定範圍）
+- Length vs Q（用 hexbin，不會黑成一坨）
+- Yield over time
+- 自訂主題（theme_classic + 字體）
