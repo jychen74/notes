@@ -120,3 +120,8 @@ qc/nanoplot/
 
 - Q 值是否集中在 Q10–Q20
 - 是否有低品質尾端
+
+### cumulative_yield
+
+- 產量是否線性增加
+- 是否中途掉速 (flowcell exhaustion)
