@@ -80,7 +80,7 @@ pwd
 
 ## 如何 run NanoPlot + QC 報告整理方式
 
-- 把 sequence 的 CSV 檔搬到 raw 資料夾
+- 把 sequence summary.txt 檔搬到 raw 資料夾
 - 指令
 
 ```bash
