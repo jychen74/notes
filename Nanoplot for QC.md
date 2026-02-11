@@ -36,3 +36,10 @@ cd ~
 micromamba activate ~/bioenvs/nanoplot
 
 ```
+
+- 確認目前在 Linux home：
+
+```bash
+
+
+```
