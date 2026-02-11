@@ -198,7 +198,6 @@ qc/custom_r/
     length_hist.png
     length_vs_q_hex.png
     qc_summary.tsv
-
 ```
 
 ## 如何使用
