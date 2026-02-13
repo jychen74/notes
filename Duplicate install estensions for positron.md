@@ -25,7 +25,7 @@ Get-Content "$HOME\Desktop\extensions_list.txt" | ForEach-Object { positron --in
   - [esbenp.prettier-vscode](https://github.com/prettier/prettier-vscode)
   - [github.vscode-github-actions](https://github.com/github/vscode-github-actions.git)
   - [github.vscode-pull-request-github](https://github.com/github/vscode-github-actions.git)
-  - meta.pyrefly
+  - [meta.pyrefly](https://github.com/facebook/pyrefly.git)
   - ms-python.debugpy
   - ms-toolsai.jupyter
   - ms-toolsai.jupyter-keymap
