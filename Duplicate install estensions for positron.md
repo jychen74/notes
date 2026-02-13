@@ -19,7 +19,7 @@ Get-Content "$HOME\Desktop\extensions_list.txt" | ForEach-Object { positron --in
 - Current extensions
   - [0xtanzim.filetree-pro](https://github.com/0xTanzim/filetree-pro)
   - [arianjamasb.protein-viewer](https://github.com/molstar/VSCoding-Sequence)
-  - carlocardella.vscode-virtualrepos
+  - [carlocardella.vscode-virtualrepos](https://github.com/carlocardella/vscode-VirtualRepos)
   - charliermarsh.ruff
   - cweijan.vscode-office
   - esbenp.prettier-vscode
