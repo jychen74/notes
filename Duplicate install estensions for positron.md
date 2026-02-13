@@ -11,6 +11,6 @@ positron --lis-extensions > "$HOME\Desktop\extensions_list.txt"
 
 ```
 
-Get-Content extensions_list.txt | ForEach-Object { positron --install-extension $_ }
+Get-Content "$HOME\Desktop\extensions_list.txt" | ForEach-Object { positron --install-extension $_ }
 
 ```
