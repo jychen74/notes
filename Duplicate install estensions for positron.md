@@ -28,7 +28,7 @@ Get-Content "$HOME\Desktop\extensions_list.txt" | ForEach-Object { positron --in
   - [meta.pyrefly](https://github.com/facebook/pyrefly.git)
   - ms-python.debugpy
   - ms-toolsai.jupyter
-  - ms-toolsai.jupyter-keymap
+  - [ms-toolsai.jupyter-keymap](https://github.com/Microsoft/vscode-jupyter-keymap.git)
   - [ms-toolsai.vscode-jupyter-cell-tags](https://github.com/Microsoft/vscode-jupyter-cell-tags.git)
   - [ms-toolsai.vscode-jupyter-slideshow](https://github.com/Microsoft/vscode-jupyter-slideshow.git)
   - [posit.air-vscode](https://github.com/posit-dev/air)
