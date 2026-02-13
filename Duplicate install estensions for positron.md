@@ -34,7 +34,7 @@ Get-Content "$HOME\Desktop\extensions_list.txt" | ForEach-Object { positron --in
   - [posit.air-vscode](https://github.com/posit-dev/air)
   - [posit.publisher](https://github.com/posit-dev/publisher)
   - [posit.shiny](https://github.com/posit-dev/shiny-vscode)
-  - [quarto.quarto](https://github.com/quarto-dev/quarto.git#main)
+  - [quarto.quarto](https://github.com/quarto-dev/quarto.git)
   - reageyao.biosyntax
   - redhat.vscode-yaml
   - shuuul.bioviewer
