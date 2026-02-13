@@ -29,7 +29,7 @@ Get-Content "$HOME\Desktop\extensions_list.txt" | ForEach-Object { positron --in
   - ms-python.debugpy
   - ms-toolsai.jupyter
   - ms-toolsai.jupyter-keymap
-  - ms-toolsai.vscode-jupyter-cell-tags
+  - [ms-toolsai.vscode-jupyter-cell-tags](https://github.com/Microsoft/vscode-jupyter-cell-tags.git)
   - [ms-toolsai.vscode-jupyter-slideshow](https://github.com/Microsoft/vscode-jupyter-slideshow.git)
   - [posit.air-vscode](https://github.com/posit-dev/air)
   - [posit.publisher](https://github.com/posit-dev/publisher)
