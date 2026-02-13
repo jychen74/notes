@@ -38,5 +38,5 @@ Get-Content "$HOME\Desktop\extensions_list.txt" | ForEach-Object { positron --in
   - reageyao.biosyntax
   - [redhat.vscode-yaml](https://github.com/redhat-developer/vscode-yaml.git)
   - shuuul.bioviewer
-  - tomoki1207.pdf
+  - [tomoki1207.pdf](https://github.com/tomoki1207/vscode-pdfviewer.git)
   - yzhang.markdown-all-in-one
