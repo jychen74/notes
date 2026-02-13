@@ -31,7 +31,7 @@ Get-Content "$HOME\Desktop\extensions_list.txt" | ForEach-Object { positron --in
   - ms-toolsai.jupyter-keymap
   - ms-toolsai.vscode-jupyter-cell-tags
   - ms-toolsai.vscode-jupyter-slideshow
-  - posit.air-vscode
+  - [posit.air-vscode](https://github.com/posit-dev/air)
   - posit.publisher
   - posit.shiny
   - quarto.quarto
