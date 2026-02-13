@@ -22,7 +22,7 @@ Get-Content "$HOME\Desktop\extensions_list.txt" | ForEach-Object { positron --in
   - [carlocardella.vscode-virtualrepos](https://github.com/carlocardella/vscode-VirtualRepos)
   - [charliermarsh.ruff](https://github.com/astral-sh/ruff-vscode)
   - [cweijan.vscode-office](https://github.com/cweijan/vscode-office)
-  - esbenp.prettier-vscode
+  - [esbenp.prettier-vscode](https://github.com/prettier/prettier-vscode)
   - github.vscode-github-actions
   - github.vscode-pull-request-github
   - meta.pyrefly
