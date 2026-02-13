@@ -11,3 +11,7 @@
 ## NanoPlot - Nanopore run QC
 
 [Nanoplot for QC](<Nanoplot for QC.md>)
+
+## Duplicate install estensions for positron
+
+[Duplicate install estensions for positron](<Duplicate install estensions for positron.md>)
