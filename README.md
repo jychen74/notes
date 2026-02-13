@@ -16,6 +16,6 @@
 
 [Duplicate install estensions for positron](<Duplicate install estensions for positron.md>)
 
-## 職能檢定考試報考資格 - 繼續教育學習時數需求
+## 實驗動物專業職能考試 - 繼續教育學習時數需求
 
 [Credit required for Laboratory Animal Professional Qualification](<Laboratory Animal Professional Qualification Framework.md>)
