@@ -23,8 +23,8 @@ Get-Content "$HOME\Desktop\extensions_list.txt" | ForEach-Object { positron --in
   - [charliermarsh.ruff](https://github.com/astral-sh/ruff-vscode)
   - [cweijan.vscode-office](https://github.com/cweijan/vscode-office)
   - [esbenp.prettier-vscode](https://github.com/prettier/prettier-vscode)
-  - github.vscode-github-actions
-  - github.vscode-pull-request-github
+  - [github.vscode-github-actions](https://github.com/github/vscode-github-actions.git)
+  - [github.vscode-pull-request-github]
   - meta.pyrefly
   - ms-python.debugpy
   - ms-toolsai.jupyter
