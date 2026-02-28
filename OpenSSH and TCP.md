@@ -19,6 +19,22 @@ Get-Service -Name sshd
 ## SSH key
 
 ```Powershell
+# 1. 建立設定目錄
+$sshDir = "C:\ProgramData\ssh"
+if (!(Test-Path $sshDir)) { New-Item -ItemType Directory -Path $sshDir -Force }
+
+# 2. 寫入公鑰 (請將下方的字串替換成您剛才複製的內容)
+$myKey = "ssh-rsa AAAAB3Nza...您的公鑰內容...user@PC"
+$myKey | Out-File -FilePath "$sshDir\administrators_authorized_keys" -Encoding ascii
+
+# 3. 權限設定 (這是成功連線的關鍵)
+icacls "$sshDir\administrators_authorized_keys" /inheritance:r
+icacls "$sshDir\administrators_authorized_keys" /grant "Administrators:(R,W)"
+icacls "$sshDir\administrators_authorized_keys" /grant "SYSTEM:(R,W)"
+
+```
+
+```Powershell
 $path = "C:\ProgramData\ssh\administrators_authorized_keys"
 icacls $path /inheritance:r
 icacls $path /grant "Administrators:(R,W)"
