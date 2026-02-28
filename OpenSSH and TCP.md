@@ -19,5 +19,9 @@ Get-Service -Name sshd
 ## SSH key
 
 ```
+$path = "C:\ProgramData\ssh\administrators_authorized_keys"
+icacls $path /inheritance:r
+icacls $path /grant "Administrators:(R,W)"
+icacls $path /grant "SYSTEM:(R,W)"
 
 ```
