@@ -1,6 +1,6 @@
 ## Remote Server: Windows
 
-```
+```Powershell
 # 安裝選用功能
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 
