@@ -19,6 +19,7 @@ Get-Service -Name sshd
 ## SSH key
 
 ```Powershell
+
 # 1. 建立設定目錄
 $sshDir = "C:\ProgramData\ssh"
 if (!(Test-Path $sshDir)) { New-Item -ItemType Directory -Path $sshDir -Force }
