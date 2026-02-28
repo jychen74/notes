@@ -18,7 +18,7 @@ Get-Service -Name sshd
 
 ## SSH key
 
-```
+```Powershell
 $path = "C:\ProgramData\ssh\administrators_authorized_keys"
 icacls $path /inheritance:r
 icacls $path /grant "Administrators:(R,W)"
