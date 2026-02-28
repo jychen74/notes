@@ -39,3 +39,9 @@ RustDesk
 ```Powershell
 ssh -p 2222 -D 1080 -o ServerAliveInterval=60 admin@127.0.0.1
 ```
+
+## Proxy SwitchyOmega (ZeroOmega)
+
+- 代理協議 SOCKS5
+- 伺服器位址 127.0.0.1
+- 連接埠 1080
