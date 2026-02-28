@@ -16,7 +16,7 @@ Get-Service -Name sshd
 
 - Status: Running。
 
-## SSH key
+## SSH key setting
 
 ```Powershell
 
