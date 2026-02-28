@@ -35,3 +35,7 @@ RustDesk
 - port: 22
 
 ### SOCKS5 tunel
+
+```Powershell
+ssh -p 2222 -D 1080 -o ServerAliveInterval=60 admin@127.0.0.1
+```
