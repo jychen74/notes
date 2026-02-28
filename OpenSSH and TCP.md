@@ -25,3 +25,5 @@ icacls $path /grant "Administrators:(R,W)"
 icacls $path /grant "SYSTEM:(R,W)"
 
 ```
+
+## Local
