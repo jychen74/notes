@@ -33,3 +33,5 @@ RustDesk
 - local:　2222
 - host: 127.0.0.1
 - port: 22
+
+###　SOCKS5 tunel
