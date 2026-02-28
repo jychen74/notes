@@ -31,6 +31,9 @@ icacls $path /grant "SYSTEM:(R,W)"
 ### the ssh key
 
 ```Powershell
+# Get the key
+# Enter file in which to save the key / Enter passphrase: Enter
+ssh-keygen -t rsa -b 4096
 
 ```
 
